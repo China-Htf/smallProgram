@@ -1,0 +1,4 @@
+<!-- 
+  通过rich-text组件的`node`属性节点，把`HTML`字符串渲染为对应的`UI`结构
+ -->
+<rich-text nodes="<h1 style='color:red'>标题</h1>"></rich-text>

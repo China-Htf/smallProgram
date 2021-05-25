@@ -1,0 +1,17 @@
+.swiper-container {
+  height: 150px;
+}
+.item {
+  height: 100%;
+  line-height: 150px;
+  text-align: center;
+}
+.swiper-container swiper-item:nth-child(1) {
+  background-color: pink;
+}
+.swiper-container swiper-item:nth-child(2) {
+  background-color: green;
+}
+.swiper-container swiper-item:nth-child(3) {
+  background-color: lightblue;
+}

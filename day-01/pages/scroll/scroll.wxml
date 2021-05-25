@@ -1,0 +1,10 @@
+<!-- 
+  scroll-y属性：允许纵向滚动
+  scroll-x属性：允许横向滚动
+  注意：使用竖向滚动时，必须给 scroll-view 一个固定高度
+ -->
+ <scroll-view class="contain2" scroll-y>
+  <view>A</view>
+  <view>B</view>
+  <view>C</view>
+</scroll-view>

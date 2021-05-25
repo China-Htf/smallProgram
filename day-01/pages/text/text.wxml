@@ -1,0 +1,4 @@
+<view>
+  手机号长按复制选中效果
+  <text selectable>13000000000</text>
+</view>
