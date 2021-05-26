@@ -1,0 +1,55 @@
+<!-- index.wxml -->
+<!--
+  Mustache语法的格式（插值表达式）
+  把data中的数据绑定到页面中渲染，使用 Mustache语法（双大括号）将变量抱起来即可
+  -->
+<view>{{ info }}</view>
+<!-- 
+  动态绑定属性
+ -->
+ <image src="{{ imageUrl }}"></image>
+ <!-- 
+   三元运算
+  -->
+  <view>{{ randomNum1 >= 5 ? '该数大于或者等于5' : '该数字小于5'}}</view>
+  <!-- 
+    算数运算
+   -->
+<view>生成100以内的随机数:{{randomNum2 * 100}}</view>
+
+<!-- 
+  事件绑定
+ -->
+ <button type="primary" bindtap="btnTapHandler">按钮</button>
+ <!-- 
+   在事件处理函数中为 data 的数据赋值
+  -->
+  <button type="primary" bindtap="countChange">+1</button>
+<!-- 
+  事件传参
+  可以为组件提供 data-* 自定义属性传参 *代表的是参数的名字
+  带上{{}}传递的是数字 不带传递的是文本
+  -->
+  <button bindtap="btnHander" data-info="{{2}}">事件传参</button>
+<!-- 
+  bindinput 的语法格式
+  通过 input事件 来响应文本框的输入事件
+ -->
+ <input bindinput="inputHandler"></input>
+
+ <!-- 
+   条件渲染
+   使用 wx:if 进行判断 wx:elif wx:else 添加else判断
+  -->
+  <view wx:if="{{count === 0}}">女</view>
+  <view wx:elif="{{count === 1}}">男</view>
+  <view wx:else>保密</view>
+<!-- 
+  结合 <block> 使用 wx:if
+  如果要一次性控制多个组件的展示与隐藏，可以使用一个<block></block>标签将多个组件包装起来，并在<block>标签上使用 wx:if 控制属性
+  注意：<block> 并不是一个组件，他只是一个包裹性质的容器，不会再页面中做任何渲染
+ -->
+ <block wx:if="{{false}}">
+   <view>1</view>
+   <view>2</view>
+ </block>
