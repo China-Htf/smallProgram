@@ -1,0 +1,4 @@
+<!--components/test5/test5.wxml-->
+<text>子组件中，count值为：{{count}}</text>
+<button bindtap="addCount">+1</button>
+<view>在 behavior 中定义的用户名是：{{username}}</view>

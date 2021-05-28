@@ -1,0 +1,9 @@
+<!--components/test4/test4.wxml-->
+<view>
+  <!-- 这部分内容将被放置在组件头部 -->
+  <slot name="before"></slot>
+  <view>这里是组件的内部</view>
+  <!-- 对于不确定的内容，可以使用 <slot> 进行占位，具体的内容由组件的使用者决定 -->
+  <!-- 这部分内容放置在组件尾部 -->
+  <slot name="after"></slot>
+</view>
